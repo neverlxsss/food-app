@@ -6,6 +6,7 @@ import { StackHeaderLeft, StackHeaderTitle } from './components';
 import { colors } from '@theme';
 
 // views
+import Welcome from '@views/Auth/Welcome';
 import Home from '@views/Home';
 import Details from '@views/Details';
 import Profile from '@views/Profile';
@@ -14,9 +15,24 @@ const Stack = createNativeStackNavigator<StackParamList>();
 
 const navigationProps = {
   headerTintColor: colors.white,
-  headerStyle: { backgroundColor: colors.darkPurple },
+  headerStyle: { backgroundColor: colors.gray },
   headerTitleStyle: { fontSize: 18 },
 };
+
+export function AuthStackNavigator() {
+  return (
+    <Stack.Navigator screenOptions={navigationProps}>
+      <Stack.Screen
+        component={Welcome}
+        name="WelcomeStack"
+        options={{
+          title: 'Welcome',
+          headerShown: false,
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
 
 export function HomeStackNavigator({ navigation }: DrawerProps) {
   return (

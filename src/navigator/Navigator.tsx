@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { useAppModule } from '@modules/app.module';
-import DrawerNavigator from './drawer';
+import { AuthStackNavigator } from './stack';
 
 function Navigator() {
   const { dispatch, checked, loggedIn, loadUser } = useAppModule();
@@ -16,7 +16,7 @@ function Navigator() {
 
   return checked && loggedIn ? (
     <NavigationContainer>
-      <DrawerNavigator />
+      <AuthStackNavigator />
     </NavigationContainer>
   ) : (
     <View />
