@@ -138,6 +138,15 @@ const styles = StyleSheet.create({
     height: 54,
     borderRadius: 27.5,
     backgroundColor: colors.white,
+    shadowColor: colors.white,
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+
+    elevation: 6,
   },
   socialLogo: {
     marginLeft: 14,
