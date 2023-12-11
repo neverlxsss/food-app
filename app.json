@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "slug": "react-native-boilerplate",
+    "name": "food-app",
+    "slug": "food-app",
     "privacy": "unlisted",
     "version": "1.0.0",
     "platforms": ["ios", "android", "web"],
@@ -28,11 +28,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
+        "projectId": "0336c306-7142-4ec4-b626-5660551a5060"
       }
     },
     "updates": {
-      "url": "https://u.expo.dev/18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
+      "url": "https://u.expo.dev/0336c306-7142-4ec4-b626-5660551a5060"
     },
     "runtimeVersion": {
       "policy": "sdkVersion"

@@ -4,13 +4,14 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "ci": "watchman watch-del-all && rm -rf node_modules && npm install",
-    "start": "watchman watch-del-all && APP_ENV=prod npx expo start -c",
-    "android": "APP_ENV=prod npx expo start --android",
-    "ios": "APP_ENV=prod npx expo start --ios",
-    "web": "APP_ENV=prod npx expo start --web",
-    "format": "node_modules/.bin/prettier --config .prettierrc src/**/*.{ts,tsx} --write",
-    "lint": "node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "node_modules/.bin/jest --verbose --passWithNoTests",
+    "start": "watchman watch-del-all && npx expo start -c",
+    "android": "npx expo start --android",
+    "ios": "npx expo start --ios",
+    "web": "npx expo start --web",
+    "format": ".\\node_modules\\.bin\\prettier --config .prettierrc src/**/*.{ts,tsx} --write",
+    "lint": ".\\node_modules\\.bin\\eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": ".\\node_modules\\.bin\\eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": ".\\node_modules\\.bin\\jest --verbose --passWithNoTests",
     "prepare": "husky install"
   },
   "dependencies": {
