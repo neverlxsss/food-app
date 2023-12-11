@@ -8,10 +8,9 @@
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
-    "format": ".\\node_modules\\.bin\\prettier --config .prettierrc src/**/*.{ts,tsx} --write",
-    "lint": ".\\node_modules\\.bin\\eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint-fix": ".\\node_modules\\.bin\\eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": ".\\node_modules\\.bin\\jest --verbose --passWithNoTests",
+    "format": "node_modules/.bin/prettier --config .prettierrc src/**/*.{ts,tsx} --write",
+    "lint": "node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "node_modules/.bin/jest --verbose --passWithNoTests",
     "prepare": "husky install"
   },
   "dependencies": {
